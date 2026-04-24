@@ -2,12 +2,10 @@ package models
 
 import (
 	"encoding/json"
-
-	"github.com/goravel/framework/database/orm"
 )
 
 type Tanent struct {
-	orm.Model
+	BaseModel
 	Name        string
 	license     string
 	Logo        string

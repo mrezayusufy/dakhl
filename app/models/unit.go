@@ -1,11 +1,7 @@
 package models
 
-import (
-	"github.com/goravel/framework/database/orm"
-)
-
 type Unit struct {
-	orm.Model
+	ID
 	TenantID uint
 	Name     string
 	Symbol   string

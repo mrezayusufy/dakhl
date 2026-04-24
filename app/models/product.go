@@ -2,12 +2,10 @@ package models
 
 import (
 	"time"
-
-	"github.com/goravel/framework/database/orm"
 )
 
 type Product struct {
-	orm.Model
+	BaseModel
 	Name         string
 	Title        *string
 	Description  *string

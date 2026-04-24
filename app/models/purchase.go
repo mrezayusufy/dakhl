@@ -2,12 +2,10 @@ package models
 
 import (
 	"time"
-
-	"github.com/goravel/framework/database/orm"
 )
 
 type Purchase struct {
-	orm.Model
+	BaseModel
 	TenandID       uint
 	BranchID       uint
 	VendorID       uint

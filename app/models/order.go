@@ -1,13 +1,7 @@
 package models
 
-import (
-	"time"
-
-	"github.com/goravel/framework/database/orm"
-)
-
 type Order struct {
-	orm.Model
+	BaseModel
 	Name    string
 	license string
 	Logo    string
@@ -16,8 +10,6 @@ type Order struct {
 	Status  OrderStatus
 	// relations
 	// branches, users, products, customers, vendors, categories, trx,
-	CreatedAt time.Time
-	UpdatedAt time.Time
 }
 type OrderStatus uint8
 

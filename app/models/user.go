@@ -10,7 +10,7 @@ import (
 )
 
 type User struct {
-	orm.Model
+	BaseModel
 	Name           string
 	TenantID       string `json:"tenant_id"`
 	BranchID       string `json:"branch_id"`
@@ -23,8 +23,6 @@ type User struct {
 	Role           string // admin, manager, cashier
 	Permissions    json.RawMessage
 	Tags           []UserTag `gorm:"serializer:json"`
-	CreatedAt      time.Time
-	UpdatedAt      time.Time
 	orm.SoftDeletes
 }
 

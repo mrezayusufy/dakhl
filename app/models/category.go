@@ -1,11 +1,7 @@
 package models
 
-import (
-	"github.com/goravel/framework/database/orm"
-)
-
 type Category struct {
-	orm.Model
+	ID
 	TenantID    string
 	ParentID    string
 	Name        string

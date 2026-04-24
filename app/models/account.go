@@ -1,13 +1,7 @@
 package models
 
-import (
-	"time"
-
-	"github.com/goravel/framework/database/orm"
-)
-
 type Account struct {
-	orm.Model
+	BaseModel
 	TenantID      string
 	ParentID      string
 	Name          string
@@ -18,6 +12,4 @@ type Account struct {
 	AccountNumber string
 	Balance       float64
 	IsActive      bool
-	CreatedAt     time.Time
-	UpdatedAt     time.Time
 }
