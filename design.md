@@ -1,0 +1,21 @@
+#Entity
+- Transaction
+- Tenant
+- Branch
+- User
+- SysUser
+- Customer
+- Vendor
+- Order
+- Order Item
+- Product
+- Purchase
+- Purchase Item
+- Account
+- Expense
+- Invetory Movements
+- Payments
+- Reports
+- Notifications
+- Auto Logs
+
