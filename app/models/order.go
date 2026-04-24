@@ -2,14 +2,19 @@ package models
 
 type Order struct {
 	BaseModel
-	Name    string
-	license string
-	Logo    string
-	Note    string
-	Address string
-	Status  OrderStatus
+	TenantID      string
+	CustomerID    string
+	BranchID      string
+	UserID        string
+	OrderType     string // sale, return, exchange
+	Subtotal      float64
+	Total         float64
+	PaymentStatus string
+	PaymentMethod string
+	Note          string
+	Status        OrderStatus
 	// relations
-	// branches, users, products, customers, vendors, categories, trx,
+	// branche, user, customer, Tenant
 }
 type OrderStatus uint8
 
