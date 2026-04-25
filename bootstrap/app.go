@@ -32,7 +32,6 @@ func Boot() contractsfoundation.Application {
 			routes.Web()
 			routes.Api()
 			routes.Grpc()
-			routes.Graphql()
 		}).
 		WithEvents(func() map[event.Event][]event.Listener {
 			return map[event.Event][]event.Listener{
