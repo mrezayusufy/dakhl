@@ -37,6 +37,6 @@ func (s *UserTestSuite) TearDownTest() {
 func (s *UserTestSuite) TestCreateByConfig() {
 	user, err := s.user.Create("feature")
 	s.Nil(err)
-	s.True(user.ID > 0)
+	s.True(user.ID.Len())
 	s.Equal("feature", user.Name)
 }

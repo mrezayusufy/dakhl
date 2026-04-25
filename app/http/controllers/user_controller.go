@@ -61,8 +61,7 @@ func (r *UserController) Store(ctx http.Context) http.Response {
 	user := models.User{
 		Name:   userCreate.Name,
 		Avatar: userCreate.Avatar,
-		Alias:  userCreate.Alias,
-		Mail:   userCreate.Mail,
+		Email:  userCreate.Email,
 		Tags:   userCreate.Tags,
 	}
 	if err := facades.Orm().Query().Create(&user); err != nil {

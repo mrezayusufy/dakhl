@@ -22,7 +22,7 @@ func Session() http.Middleware {
 
 		}
 
-		if user.ID == 0 {
+		if user.ID.Len() {
 			ctx.Request().Abort(http.StatusUnauthorized)
 			return
 		}

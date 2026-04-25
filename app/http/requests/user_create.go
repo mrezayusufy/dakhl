@@ -9,8 +9,7 @@ import (
 type UserCreate struct {
 	Name   string           `form:"name" json:"name"`
 	Avatar string           `form:"avatar" json:"avatar"`
-	Alias  string           `form:"alias" json:"alias"`
-	Mail   string           `form:"mail" json:"mail"`
+	Email  string           `form:"mail" json:"mail"`
 	Tags   []models.UserTag `form:"tags" json:"tags"`
 }
 

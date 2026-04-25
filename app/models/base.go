@@ -23,6 +23,12 @@ func (b *ID) BeforeCreate(tx *gorm.DB) error {
 	}
 	return nil
 }
+func (d ID) Len() bool {
+	if d.ID == "" {
+		return true
+	}
+	return false
+}
 
 // GenerateShortID تولید شناسه یکتا
 func GenerateShortID() string {

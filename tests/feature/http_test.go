@@ -81,7 +81,7 @@ func (s *HttpTestSuite) TestAuthByJwt() {
 			resp.AssertSuccessful()
 
 			s.NoError(resp.Bind(&authLogin))
-			s.True(authLogin.User.ID > 0)
+			s.True(authLogin.User.ID.Len())
 			s.Equal(test.name, authLogin.User.Name)
 
 			token := resp.Headers().Get("Authorization")
@@ -123,7 +123,7 @@ func (s *HttpTestSuite) TestAuthBySession() {
 	resp.AssertSuccessful()
 
 	s.NoError(resp.Bind(&authLogin))
-	s.True(authLogin.User.ID > 0)
+	s.True(authLogin.User.ID.Len())
 	s.Equal("Goravel", authLogin.User.Name)
 
 	// Get User
@@ -319,7 +319,7 @@ func (s *HttpTestSuite) TestUsers() {
 	resp.AssertSuccessful()
 
 	s.NoError(resp.Bind(&createdUser))
-	s.True(createdUser.User.ID > 0)
+	s.True(createdUser.User.ID.Len())
 	s.Equal("Goravel", createdUser.User.Name)
 	s.Equal("https://goravel.dev/avatar.png", createdUser.User.Avatar)
 
@@ -334,7 +334,7 @@ func (s *HttpTestSuite) TestUsers() {
 
 	s.NoError(resp.Bind(&users))
 	s.Equal(1, len(users.Users))
-	s.True(users.Users[0].ID > 0)
+	s.True(users.Users[0].ID.Len())
 	s.Equal("Goravel", users.Users[0].Name)
 	s.Equal("https://goravel.dev/avatar.png", users.Users[0].Avatar)
 
@@ -365,7 +365,7 @@ func (s *HttpTestSuite) TestUsers() {
 	resp.AssertSuccessful()
 
 	s.NoError(resp.Bind(&user))
-	s.True(user.User.ID > 0)
+	s.True(user.User.ID.Len())
 	s.Equal("Framework", user.User.Name)
 	s.Equal("https://goravel.dev/avatar.png", user.User.Avatar)
 
