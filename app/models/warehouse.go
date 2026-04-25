@@ -7,6 +7,6 @@ type Warehouse struct {
 	BranchID string
 }
 
-// Product has many WareHouse
+// Product has many Warehouse
 // Warehouse has many products
 // Many To Many
