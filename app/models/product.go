@@ -20,7 +20,7 @@ type Product struct {
 	CostPrice    *float64
 	Qty          uint
 	DepartmentID string
-	WareHouseID  string
+	InventoryID  string
 	VendorID     string
 	BranchID     uint
 	IsFav        bool
