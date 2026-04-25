@@ -8,8 +8,8 @@ import (
 	"github.com/goravel/framework/support/carbon"
 	"github.com/stretchr/testify/suite"
 
-	"goravel/app/facades"
-	"goravel/tests"
+	"dakhl/app/facades"
+	"dakhl/tests"
 )
 
 type DBTestSuite struct {

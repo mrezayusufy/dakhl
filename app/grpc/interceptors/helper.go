@@ -9,7 +9,7 @@ import (
 	"github.com/uber/jaeger-client-go/transport"
 	"google.golang.org/grpc/metadata"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 type MDReaderWriter struct {

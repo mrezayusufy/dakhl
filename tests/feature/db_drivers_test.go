@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 func TestDBDrivers(t *testing.T) {

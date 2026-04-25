@@ -14,8 +14,8 @@ import (
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/stretchr/testify/suite"
 
-	"goravel/app/facades"
-	"goravel/tests"
+	"dakhl/app/facades"
+	"dakhl/tests"
 )
 
 type FilesystemTestSuite struct {

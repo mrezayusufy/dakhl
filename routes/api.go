@@ -7,9 +7,9 @@ import (
 	"github.com/goravel/framework/contracts/route"
 	httpmiddleware "github.com/goravel/framework/http/middleware"
 
-	"goravel/app/facades"
-	"goravel/app/http/controllers"
-	"goravel/app/http/middleware"
+	"dakhl/app/facades"
+	"dakhl/app/http/controllers"
+	"dakhl/app/http/middleware"
 )
 
 func Api() {

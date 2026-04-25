@@ -3,7 +3,7 @@ package bootstrap
 import (
 	"github.com/goravel/framework/contracts/queue"
 
-	"goravel/app/jobs"
+	"dakhl/app/jobs"
 )
 
 func Jobs() []queue.Job {

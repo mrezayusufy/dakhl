@@ -3,8 +3,8 @@ package controllers
 import (
 	"github.com/goravel/framework/contracts/http"
 
-	"goravel/app/facades"
-	"goravel/app/models"
+	"dakhl/app/facades"
+	"dakhl/app/models"
 )
 
 /*********************************

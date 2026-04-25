@@ -10,7 +10,7 @@ import (
 	"github.com/goravel/gin"
 	ginfacades "github.com/goravel/gin/facades"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 func init() {

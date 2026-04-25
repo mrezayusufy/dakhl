@@ -3,7 +3,7 @@ package middleware
 import (
 	httpcontract "github.com/goravel/framework/contracts/http"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 func Lang() httpcontract.Middleware {

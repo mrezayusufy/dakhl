@@ -1,8 +1,8 @@
 package services
 
 import (
-	"goravel/app/facades"
-	"goravel/app/models"
+	"dakhl/app/facades"
+	"dakhl/app/models"
 )
 
 type User interface {

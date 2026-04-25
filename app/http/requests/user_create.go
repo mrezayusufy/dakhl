@@ -1,7 +1,7 @@
 package requests
 
 import (
-	"goravel/app/models"
+	"dakhl/app/models"
 
 	"github.com/goravel/framework/contracts/http"
 )

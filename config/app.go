@@ -3,8 +3,8 @@ package config
 import (
 	"github.com/goravel/framework/support/carbon"
 
-	"goravel/app/facades"
-	"goravel/lang_fs"
+	"dakhl/app/facades"
+	"dakhl/lang_fs"
 )
 
 // Boot Start all init methods of the current folder to bootstrap all config.

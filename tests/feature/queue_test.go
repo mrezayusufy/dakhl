@@ -10,9 +10,9 @@ import (
 	"github.com/goravel/framework/support/carbon"
 	"github.com/stretchr/testify/suite"
 
-	"goravel/app/facades"
-	"goravel/app/jobs"
-	"goravel/tests"
+	"dakhl/app/facades"
+	"dakhl/app/jobs"
+	"dakhl/tests"
 )
 
 type QueueTestSuite struct {

@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"goravel/app/services"
-	"goravel/tests"
+	"dakhl/app/services"
+	"dakhl/tests"
 )
 
 /*

@@ -8,7 +8,7 @@ import (
 	ossfacades "github.com/goravel/oss/facades"
 	s3facades "github.com/goravel/s3/facades"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 func init() {

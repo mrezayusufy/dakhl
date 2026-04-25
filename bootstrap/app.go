@@ -15,13 +15,13 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/stats"
 
-	"goravel/app/events"
-	"goravel/app/facades"
-	"goravel/app/grpc/interceptors"
-	"goravel/app/listeners"
-	"goravel/app/models"
-	"goravel/config"
-	"goravel/routes"
+	"dakhl/app/events"
+	"dakhl/app/facades"
+	"dakhl/app/grpc/interceptors"
+	"dakhl/app/listeners"
+	"dakhl/app/models"
+	"dakhl/config"
+	"dakhl/routes"
 )
 
 func Boot() contractsfoundation.Application {

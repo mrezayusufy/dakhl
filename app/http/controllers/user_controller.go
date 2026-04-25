@@ -3,9 +3,9 @@ package controllers
 import (
 	"github.com/goravel/framework/contracts/http"
 
-	"goravel/app/facades"
-	"goravel/app/http/requests"
-	"goravel/app/models"
+	"dakhl/app/facades"
+	"dakhl/app/http/requests"
+	"dakhl/app/models"
 )
 
 type UserController struct {

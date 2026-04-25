@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goravel/bootstrap"
+	"dakhl/bootstrap"
 )
 
 func main() {

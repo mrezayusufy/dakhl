@@ -3,8 +3,8 @@ package facades
 import (
 	"log"
 
-	"goravel/packages/sms"
-	"goravel/packages/sms/contracts"
+	"dakhl/packages/sms"
+	"dakhl/packages/sms/contracts"
 )
 
 func Sms() contracts.Sms {

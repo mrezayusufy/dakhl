@@ -6,7 +6,7 @@ import (
 	proto "github.com/goravel/example-proto"
 	"github.com/goravel/framework/contracts/http"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 /*********************************

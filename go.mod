@@ -1,9 +1,8 @@
-module goravel
+module dakhl
 
 go 1.24.0
 
 require (
-	github.com/99designs/gqlgen v0.17.57
 	github.com/gin-gonic/gin v1.11.0
 	github.com/gofiber/fiber/v2 v2.52.11
 	github.com/gofiber/template/html/v2 v2.1.3
@@ -28,7 +27,6 @@ require (
 	github.com/swaggo/http-swagger/v2 v2.0.2
 	github.com/swaggo/swag v1.16.2
 	github.com/uber/jaeger-client-go v2.30.0+incompatible
-	github.com/vektah/gqlparser/v2 v2.5.19
 	google.golang.org/grpc v1.78.0
 )
 

@@ -6,7 +6,7 @@ import (
 
 	"github.com/goravel/framework/support/file"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 func TestMain(m *testing.M) {

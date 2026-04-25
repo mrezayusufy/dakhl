@@ -6,7 +6,7 @@ import (
 	"github.com/goravel/framework/testing/mock"
 	"github.com/stretchr/testify/suite"
 
-	"goravel/app/models"
+	"dakhl/app/models"
 )
 
 type UserTestSuite struct {

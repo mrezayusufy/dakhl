@@ -3,7 +3,7 @@ package migrations
 import (
 	"github.com/goravel/framework/contracts/database/schema"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 type M20210101000001CreateUsersTable struct {

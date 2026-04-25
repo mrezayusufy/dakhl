@@ -10,9 +10,9 @@ import (
 	"github.com/goravel/framework/support/http"
 	"github.com/stretchr/testify/suite"
 
-	"goravel/app/facades"
-	"goravel/app/models"
-	"goravel/tests"
+	"dakhl/app/facades"
+	"dakhl/app/models"
+	"dakhl/tests"
 )
 
 type HttpTestSuite struct {
@@ -294,7 +294,7 @@ func (s *HttpTestSuite) TestUrl() {
 
 	content, err := resp.Content()
 	s.Require().NoError(err)
-	s.Equal(`{"full_url":"http://example.com/url/get/1?a=1\u0026b=2","info":{"handler":"goravel/routes.Api.func11.1","method":"GET","name":"url.get","path":"/url/get/{id}"},"info1":{"handler":"goravel/routes.Api.func11.1","method":"GET|HEAD","name":"url.get","path":"/url/get/{id}"},"method":"GET","name":"url.get","origin_path":"/url/get/{id}","path":"/url/get/1","url":"/url/get/1?a=1\u0026b=2"}`, content)
+	s.Equal(`{"full_url":"http://example.com/url/get/1?a=1\u0026b=2","info":{"handler":"dakhl/routes.Api.func11.1","method":"GET","name":"url.get","path":"/url/get/{id}"},"info1":{"handler":"dakhl/routes.Api.func11.1","method":"GET|HEAD","name":"url.get","path":"/url/get/{id}"},"method":"GET","name":"url.get","origin_path":"/url/get/{id}","path":"/url/get/1","url":"/url/get/1?a=1\u0026b=2"}`, content)
 
 	resp, err = s.Http(s.T()).Post("/url/post/1?a=1&b=2", strings.NewReader("{\"name\":\"Goravel\"}"))
 	s.Require().NoError(err)
@@ -302,7 +302,7 @@ func (s *HttpTestSuite) TestUrl() {
 
 	content, err = resp.Content()
 	s.Require().NoError(err)
-	s.Equal(`{"full_url":"http://example.com/url/post/1?a=1\u0026b=2","info":{"handler":"goravel/routes.Api.func11.2","method":"POST","name":"url.post","path":"/url/post/{id}"},"info1":{"handler":"goravel/routes.Api.func11.2","method":"POST","name":"url.post","path":"/url/post/{id}"},"method":"POST","name":"url.post","origin_path":"/url/post/{id}","path":"/url/post/1","url":"/url/post/1?a=1\u0026b=2"}`, content)
+	s.Equal(`{"full_url":"http://example.com/url/post/1?a=1\u0026b=2","info":{"handler":"dakhl/routes.Api.func11.2","method":"POST","name":"url.post","path":"/url/post/{id}"},"info1":{"handler":"dakhl/routes.Api.func11.2","method":"POST","name":"url.post","path":"/url/post/{id}"},"method":"POST","name":"url.post","origin_path":"/url/post/{id}","path":"/url/post/1","url":"/url/post/1?a=1\u0026b=2"}`, content)
 }
 
 func (s *HttpTestSuite) TestUsers() {

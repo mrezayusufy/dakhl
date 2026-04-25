@@ -3,9 +3,9 @@ package routes
 import (
 	proto "github.com/goravel/example-proto"
 
-	"goravel/app/facades"
-	"goravel/app/grpc/controllers"
-	httpcontrollers "goravel/app/http/controllers"
+	"dakhl/app/facades"
+	"dakhl/app/grpc/controllers"
+	httpcontrollers "dakhl/app/http/controllers"
 )
 
 func Grpc() {

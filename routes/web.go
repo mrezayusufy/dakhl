@@ -7,8 +7,8 @@ import (
 	"github.com/goravel/framework/support"
 	"github.com/spf13/cast"
 
-	"goravel/app/facades"
-	"goravel/app/http/controllers"
+	"dakhl/app/facades"
+	"dakhl/app/http/controllers"
 )
 
 func Web() {

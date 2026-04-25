@@ -7,7 +7,7 @@ import (
 	"github.com/goravel/framework/support/path"
 	"github.com/stretchr/testify/assert"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 func TestInstallAndUninstallDBDrivers(t *testing.T) {
@@ -165,18 +165,18 @@ func TestInstallAndUninstallLocalPackage(t *testing.T) {
 
 	assert.False(t, facades.Process().Run("go run . artisan package:install goravel/packages/example").Failed())
 	assert.True(t, file.Contain(path.Bootstrap("providers.go"), "&example.ServiceProvider{},"))
-	assert.True(t, file.Contain(path.Bootstrap("providers.go"), "goravel/packages/example"))
+	assert.True(t, file.Contain(path.Bootstrap("providers.go"), "dakhl/packages/example"))
 
 	assert.NoError(t, facades.Artisan().Call("package:uninstall goravel/packages/example"))
 	assert.False(t, file.Contain(path.Bootstrap("providers.go"), "&example.ServiceProvider{},"))
-	assert.False(t, file.Contain(path.Bootstrap("providers.go"), "goravel/packages/example"))
+	assert.False(t, file.Contain(path.Bootstrap("providers.go"), "dakhl/packages/example"))
 
 	assert.NoError(t, file.Remove(path.Base("packages", "example")))
 }
 
 func TestInstallAndPublishAndUninstallLocalPackage(t *testing.T) {
 	assert.NoError(t, facades.Artisan().Call("package:install ./packages/sms --no-ansi"))
-	assert.True(t, file.Contain(path.Bootstrap("providers.go"), "goravel/packages/sms"))
+	assert.True(t, file.Contain(path.Bootstrap("providers.go"), "dakhl/packages/sms"))
 	assert.True(t, file.Contain(path.Bootstrap("providers.go"), "&sms.ServiceProvider{}"))
 
 	assert.False(t, facades.Process().Run("go run . artisan vendor:publish --package=./packages/sms --no-ansi").Failed())
@@ -184,6 +184,6 @@ func TestInstallAndPublishAndUninstallLocalPackage(t *testing.T) {
 
 	assert.NoError(t, file.Remove(path.Config("sms.go")))
 	assert.NoError(t, facades.Artisan().Call("package:uninstall ./packages/sms"))
-	assert.False(t, file.Contain(path.Bootstrap("providers.go"), "goravel/packages/sms"))
+	assert.False(t, file.Contain(path.Bootstrap("providers.go"), "dakhl/packages/sms"))
 	assert.False(t, file.Contain(path.Bootstrap("providers.go"), "&sms.ServiceProvider{}"))
 }

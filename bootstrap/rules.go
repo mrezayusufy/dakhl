@@ -3,7 +3,7 @@ package bootstrap
 import (
 	"github.com/goravel/framework/contracts/validation"
 
-	"goravel/app/rules"
+	"dakhl/app/rules"
 )
 
 func Rules() []validation.Rule {

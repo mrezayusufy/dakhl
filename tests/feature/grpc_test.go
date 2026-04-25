@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 func TestGrpc(t *testing.T) {

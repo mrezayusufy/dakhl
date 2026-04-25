@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"goravel/app/facades"
-	"goravel/tests"
+	"dakhl/app/facades"
+	"dakhl/tests"
 )
 
 type HttpClientTestSuite struct {

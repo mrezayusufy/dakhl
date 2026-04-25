@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"goravel/app/facades"
-	"goravel/bootstrap"
+	"dakhl/app/facades"
+	"dakhl/bootstrap"
 
 	"github.com/goravel/framework/support/carbon"
 	"github.com/goravel/framework/support/file"

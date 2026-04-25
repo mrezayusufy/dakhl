@@ -7,9 +7,9 @@ import (
 	"github.com/goravel/framework/contracts/event"
 	"github.com/stretchr/testify/assert"
 
-	"goravel/app/events"
-	"goravel/app/facades"
-	"goravel/app/listeners"
+	"dakhl/app/events"
+	"dakhl/app/facades"
+	"dakhl/app/listeners"
 )
 
 func TestEvent(t *testing.T) {

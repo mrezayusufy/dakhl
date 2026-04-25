@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"goravel/app/facades"
-	"goravel/app/models"
-	"goravel/tests"
+	"dakhl/app/facades"
+	"dakhl/app/models"
+	"dakhl/tests"
 )
 
 type OrmTestSuite struct {

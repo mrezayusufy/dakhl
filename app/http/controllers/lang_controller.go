@@ -3,7 +3,7 @@ package controllers
 import (
 	"github.com/goravel/framework/contracts/http"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 type LangController struct {

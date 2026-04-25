@@ -7,7 +7,7 @@ import (
 	sqlitefacades "github.com/goravel/sqlite/facades"
 	sqlserverfacades "github.com/goravel/sqlserver/facades"
 
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 func init() {

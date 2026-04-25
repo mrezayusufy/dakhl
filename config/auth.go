@@ -1,7 +1,7 @@
 package config
 
 import (
-	"goravel/app/facades"
+	"dakhl/app/facades"
 )
 
 func init() {
